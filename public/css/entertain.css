@@ -1,0 +1,76 @@
+  /* ENTERTAINMENT SECTION */
+
+  .entertain{
+    text-align: center; /* Center the text horizontally */
+    border: solid 2px;
+    background-color: azure;
+    width: 25%; /* Adjust width as needed */
+    margin: auto;
+  }
+
+  
+  .entertainment h1 {
+    color: white; /* Set the color of <p> elements directly inside .entertainment */
+  }
+
+  .entertainment {
+    position: relative;
+    /* padding: 20px; */
+  }
+
+
+  .entertainment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../vivian-source/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.5); /* Darken the background image */
+    z-index: -1; /* Ensure the background remains behind the content */
+  }
+
+   .entertainCard{
+    width: 60%;
+    margin: auto;
+    margin-top: 8%;
+    height: 35vh;
+   }
+
+   .entertainCard img{
+    height: 55vh;
+    object-fit: cover; /* Ensure image covers the container */
+
+   }
+
+.room-image{
+  height: 100%;
+}
+  
+  @media only screen and (max-width: 768px) {
+    .entertainment img{
+      height: 35vh;
+  }
+
+  .overlay img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .card{
+    width: 20rem;
+    margin: auto;
+    margin-top: 8%;
+}
+  }
+
+  
+
+
+
+    

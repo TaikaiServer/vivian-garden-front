@@ -1,0 +1,268 @@
+/* cover section */
+
+.overlay {
+    width: 100%;
+    height: 70vh; 
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+}
+
+
+
+
+
+.room-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the image is behind the text */
+}
+
+.text-overlay {
+    z-index: 1; /* Ensure the text is above the image and overlay */
+    color: white; /* Text color */
+    font-size: 3em; /* Text size */
+    font-weight: bold;
+    position: relative;
+}
+
+
+/* grid card section */
+
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    padding: 2%;
+    margin-top: 2%;
+    /* width: 50%; */
+}
+
+.card{
+    background: rgb(174, 136, 79);
+    padding: 1%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* width: 50%; */
+
+}
+
+.card-image{
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.card-name{
+    margin: 5%;
+    font-size: 2em;
+}
+
+.card a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent to keep text color consistent */
+    display: block; /* Make the link cover the entire card area */
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .card-image{
+      height: 27vh;
+    }
+    .card-name{
+      font-size: 1.7em;
+    }
+
+    .card-grid {
+      display: flex; /* Enable flexbox layout */
+      flex-direction: column; /* Arrange elements vertically */
+    }
+    
+    .card {
+      margin-bottom: 20px; /* Add some space between cards */
+    }
+  }
+
+
+
+
+
+
+
+/* room detail */
+
+.single-room h1{
+  text-align: center;
+  color: rgb(243, 164, 61);
+}
+
+hr {
+  border: 0;
+  height: 1px; /* Set the thickness of the line */
+  background-color: #ccc; /* Adjust the color as needed */
+  margin: 10px 0; /* Adjust the margin to control spacing around the line */
+}
+
+
+
+/* Container for the entire section */
+.room-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Container for room-explain and room-spec */
+.room-content {
+  display: flex;
+  flex-direction: column;
+  width: 60vh;
+}
+
+/* Room explain styles */
+.room-explain {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+/* .room-info {
+  padding-left: 40%;
+} */
+
+.room-info li {
+  margin-bottom: 10px;
+}
+
+/* Room spec styles */
+.room-spec {
+  padding-top: 7vh;
+  padding-left: 20%;
+  padding-bottom: 10vh;
+}
+
+.room-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.room-features li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.room-features li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: green;
+  font-size: 18px;
+}
+
+/* Room price styles */
+.room-price {
+  width: 50%; /* Adjust the width as needed */
+  text-align: center;
+  padding-top: 8%;
+  padding-left: 10%;
+}
+
+.room-price h2 {
+  padding-bottom: 2vh;
+}
+
+.room-price a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid rgb(196, 117, 56);
+  border-radius: 5px;
+  background-color: rgb(196, 117, 56);
+  color: white;
+}
+
+.room-price a:hover {
+  background-color: white;
+  color: rgb(196, 117, 56);
+}
+
+
+
+.room-img {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.room-img img {
+  width: 23.5%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 5px;
+  padding: 1vh;
+}
+
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    .thongtin{
+      padding-top: 3%;
+    }
+
+    .room-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .room-info{
+      padding-left: 13%;
+    }
+
+    .room-spec{
+      padding-left: 10%;
+    }
+
+    .room-price {
+      width: 100%; /* Adjust the width as needed */
+      text-align: center;
+      padding-top: 1%;
+      padding-left: 2%;
+      padding-bottom: 10%;
+    }
+
+    .room-price h2{
+      font-size: 1.35em;
+    }
+
+    .carousel-inner img{
+      height: 10vh;
+      object-fit: cover; /* Ensure image covers the container */
+
+    }
+
+
+
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    .room-info{
+      padding-left: 20%;
+    }
+
+    .slide .roomview .active{
+      height: 60%;
+    }
+  }
+  

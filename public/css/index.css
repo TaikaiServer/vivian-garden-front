@@ -1,0 +1,553 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Tiny5", sans-serif;
+
+}
+
+
+/* NAVIGAION BAR */
+
+
+.book-link {
+  display: block;
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+  background-color: #ea9f1e;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.book-link:hover {
+  background-color: #dda64c;
+}
+
+
+.logo {
+  height: 10vh;
+  width: 23vh;
+
+}
+
+.navbar-toggler{
+  padding-right: 5%;
+}
+
+
+
+.offcanvas-body {
+  padding: 20px;
+}
+
+.offcanvas-title {
+  color: rgb(242, 196, 12);
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd; /* Add this line */
+  padding: 2%;
+}
+
+ .navbar-nav .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.navbar-nav .nav-item a {
+  color: #bd9f48; /* Change to your preferred hover color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #d4c598; /* Change to your preferred hover color */
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.offcanvas-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+
+
+
+/* WELCOME SECTION */
+
+/* Carousel container */
+.carousel {
+  width: 100%;
+  margin: 0;
+}
+
+/* Carousel items */
+.carousel-item {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Carousel images */
+.carousel-item img {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensure image covers the container */
+  margin: 0;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .carousel-item img {
+    width: 100%; /* Override width for smaller screens */
+    height: 80vh;
+    object-fit: cover; /* Ensure image covers the container */
+
+  }
+
+}
+
+
+
+
+
+
+.welcome-message, .explore-message-box {
+    position: relative; /* Adjust positioning context */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5em; /* Adjust font size as needed */
+    text-align: center;
+}
+
+.book-link {
+    border-radius: 4px; /* Adjust border radius as needed */
+    margin-right: 15px; /* Add margin to space out from other links */
+    background-color: rgb(196, 117, 56);
+    
+}
+
+
+/* GREETING */
+
+
+
+.greeting {
+    text-align: center; /* Center the text horizontally */
+    align-items: center;
+    border: solid 2px;
+    background-color: azure;
+    width: 30%; /* Adjust width as needed */
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+.intro{
+    width: 100%;
+    min-height: 80vh; /* Each section takes at least full viewport height */
+}
+
+.intro-box {
+    margin-top: 5%;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+.intro-img {
+    margin-right: 3%; /* Add some space between the image and the message */
+    height: 50vh;
+    width: 75vh;
+    padding-left: 5%;
+}
+
+.intro-msg {
+    margin: 0; /* Remove default margin */
+    font-size: 120%;
+    padding: 5%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .greeting {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 5%;
+    border: solid 2px;
+    background-color: azure;
+    width: 80%; /* Adjust width as needed */
+}
+
+
+.intro-img {
+  height: 40vh;
+  width: 95%;
+  margin-bottom: 5%;
+
+}
+
+.intro-box {
+  margin-top: 5%;
+  display: block;
+  width: 95%;
+  height: 40vh;
+}
+
+.intro{
+  margin-bottom: 5%;
+}
+
+
+}
+
+
+
+/* EXPLORE */
+
+.explore-container {
+  position: relative;
+  height: 80vh; /* Each section takes up half of the viewport height */
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+
+.explore-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../vivian-source/explore.jpg");
+}
+
+
+.explore-message-box {
+    width: 450px; 
+    height: 350px; 
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: -15%; /* Adjustable left margin */
+    justify-content: center;
+}
+
+.explore-message {
+    color: black;
+    font-size: 40%; /* Adjust font size as needed */
+    width: 100%;
+    display: block;
+    padding-top: 10%;
+}
+
+.explore-content {
+    color: black;
+    font-size: 25%; /* Adjust font size as needed */
+    padding: 5%;
+    display: block;
+}
+
+.explore-button{
+    border-radius: 2px;
+    border: #000 solid 2px;
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: #000;
+    padding: 3% 6%;
+    font-size: 35%;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .explore-container{
+    margin-top: 35%;
+  }
+
+  .explore-message-box{
+    margin-left: 0.5%;
+    padding-bottom: 30%;
+    width: 100%;
+    
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 390px) {
+ 
+  .explore-container{
+    margin-top: 80%;
+  }
+
+}
+
+
+
+
+
+  /* VIDEO SECTION */
+
+  .video {
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    margin-top: 15%;
+}
+
+.video iframe {
+    width: 60%;
+    height: 70vh; /* Default height for YouTube embeds */
+}
+
+@media only screen and (max-width: 1024px) {
+
+.video iframe {
+    width: 90%;
+    height: 40vh; /* Default height for YouTube embeds */
+}
+}
+
+
+
+
+  /* LOCATION SECTION */
+
+
+  .location {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 90vh; /* Each section takes at least full viewport height */
+  }
+  
+  iframe {
+    width: 70%;
+    height: 80vh;
+    border: none; /* Optional: remove border for a cleaner look */
+    margin-bottom: 3%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .location {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      min-height: 30vh; /* Each section takes at least full viewport height */
+    }
+    
+    iframe {
+      width: 90%;
+      height: 30vh;
+      border: none; /* Optional: remove border for a cleaner look */
+      margin-bottom: 3%;
+    }
+  }
+
+
+
+
+
+
+/* FOOTER SECTION */
+
+.footer {
+    background-color: rgb(241, 212, 178);
+    padding: 20px;
+    text-align: center;
+    min-height: 40vh;
+  }
+
+.section{
+    padding-bottom: 1vh;
+}
+  
+  .footer h2 {
+    margin-bottom: 20px;
+  }
+
+  .footer h3 {
+  color: dining1
+  rgb(16, 16, 16);  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+  }
+  
+  .policy-section {
+    margin-left: 10%; /* Add some margin to push it closer to the middle */
+    text-align: left;
+    padding-top: 2vh;
+  }
+
+  .contact-section {
+    text-align: left;
+    margin-left: 15%; /* Add some margin to push it closer to the middle */
+    padding-top: 2vh;
+
+  }
+  
+  .policy-section h3, .contact-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .policy-section ul, .contact-section ul {
+    list-style: none;
+    padding: 0;
+    color: #9a7b1c;
+
+  }
+
+  .policy-section :hover{
+    color: #f4f0e4;
+
+  }
+  
+
+  .policy-section li, .contact-section li {
+    margin-bottom: 10px;
+  }
+  
+  .policy-section li a, .contact-section li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .contact-section li i {
+    margin-right: 20px;
+  }
+  
+  .footer a .fab {
+    font-size: 3em;
+    margin-top: 2%; /* Add space between the content and the icon */
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      .footer {
+        background-color: rgb(241, 212, 178);
+        padding: 10px;
+        text-align: center;
+        min-height: 40vh;
+      }
+      
+      .footer h2 {
+        margin-bottom: 20px;
+      }
+      
+      .footer-content {
+        display: flex;
+        flex-direction: column; /* Arrange items in a column */
+        align-items: center; /* Center items horizontally */
+        gap: 20px; /* Add some space between items */
+        padding-top: 2vh;
+      }
+      
+      .policy-section,
+      .contact-section {
+        text-align: left;
+        width: 100%; /* Ensure full width to align with the rest of the content */
+      }
+      
+      .policy-section h3, 
+      .contact-section h3 {
+        margin-bottom: 10px;
+      }
+      
+      .policy-section ul, 
+      .contact-section ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .policy-section li, 
+      .contact-section li {
+        margin-bottom: 10px;
+      }
+      
+      .policy-section li a, 
+      .contact-section li a {
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .contact-section li i {
+        margin-right: 10px;
+      }
+    
+      
+      .footer a .fab {
+        font-size: 3em;
+        margin-top: 2%; /* Add space between the content and the icon */
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .footer a {
+        margin-top: 20px; /* Add space between the sections and the social media icon */
+      }
+       
+    }
+
+
+  }
+
+
+
+
+
+  /* INSTRUCTION */
+
+  .hello{
+    text-align: center; /* Center the text horizontally */
+    align-items: center;
+    border: solid 2px;
+    background-color: azure;
+    width: 50%; /* Adjust width as needed */
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+
+
+  @media only screen and (max-width: 1024px) {
+    .hello {
+      text-align: center; /* Center the text horizontally */
+      margin-top: 5%;
+      border: solid 2px;
+      background-color: azure;
+      width: 80%; /* Adjust width as needed */
+  }
+
+}
+
