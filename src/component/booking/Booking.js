@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import bookImage from '../../../public/vivian-source/book.jpg';
+
+
 const BookingSection = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -62,7 +65,7 @@ const BookingSection = () => {
     return (
         <div>
             <div className="overlay">
-                <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/book.jpg`} alt="Room" />
+                <img className="room-image" src={bookImage} alt="Room" />
                 <div className="text-overlay">Đặt Phòng</div>
             </div>
 
