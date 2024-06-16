@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import bookImage from '../../../public/vivian-source/book.jpg';
+// import bookImage from '../../../public/vivian-source/book.jpg';
 
 
 const BookingSection = () => {
@@ -65,7 +65,7 @@ const BookingSection = () => {
     return (
         <div>
             <div className="overlay">
-                <img className="room-image" src={bookImage} alt="Room" />
+                <img className="room-image" src='../../../public/vivian-source/book.jpg' alt="Room" />
                 <div className="text-overlay">Đặt Phòng</div>
             </div>
 
