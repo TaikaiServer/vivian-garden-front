@@ -19,23 +19,32 @@ const RoomTop = () => {
     <div className="card">
 
 
-      <a href="/group-room-view">
+      {/* <a href="/group-room-view">
         <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/group2.jpeg`} alt="group-room" />
         <div className="card-name">Phòng Tập Thể</div>
-      </a>
+      </a> */}
 
+      <Link to="/group-room-view"> 
+        <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/group2.jpeg`} alt="group-room" />
+        <div className="card-name">Phòng Tập Thể</div>
+      </Link>
 
 
 
 
     </div>
-    <Link to="/group-room-view">Sinh Hoạt</Link>
+   
 
     <div className="card">
-      <a href="/single-room-view">
+      {/* <a href="/single-room-view">
         <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/single1.jpeg`} alt="single-room" />
         <div className="card-name">Phòng VIP</div>
-      </a>
+      </a> */}
+
+      <Link to="/single-room-view"> 
+        <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/single1.jpeg`} alt="group-room" />
+        <div className="card-name">Phòng VIP</div>
+      </Link>
     </div>
   </div>
 </section>

@@ -11,7 +11,7 @@ const SingleRoom = () => {
     return(
         <div className="single-room">
         <div className="overlay">
-           <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/single1.jpg`} alt="Room" />
+           <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/single1.jpeg`} alt="Room" />
            <div className="text-overlay">Phòng VIP</div>
         </div>
 
