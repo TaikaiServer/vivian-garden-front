@@ -1,6 +1,6 @@
 // AppRouter.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/home';
 import RoomView from './pages/roomview';
@@ -20,21 +20,17 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/roomview" element={<RoomView />} />
-        <Route path="/single-room-view" element={<SingleRoomView/>} />
-        <Route path="/group-room-view" element={<GroupRoomView />} />
         <Route path="/activity" element={<ActivityView />} />
         <Route path="/entertain" element={<EntertainView />} />
         <Route path="/service" element={<ServiceView />} />
         <Route path="/contact" element={<ContactView />} />
-        <Route path="/instruction" element={<InsView />} />
         <Route path="/book-room" element={<BookingView />} />
 
+        
+        <Route path="/instruction" element={<InsView />} />
         <Route path="/admin" element={<AdminPage />} />
-
-
-
-
-
+        <Route path="/single-room-view" element={<SingleRoomView />} />
+        <Route path="/group-room-view" element={<GroupRoomView />} />
       </Routes>
     </Router>
   );

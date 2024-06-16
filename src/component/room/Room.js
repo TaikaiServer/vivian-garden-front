@@ -1,4 +1,6 @@
 import React, {useEffect} from "react";
+import { Link } from 'react-router-dom';
+
 
 const RoomTop = () => {
 
@@ -15,17 +17,24 @@ const RoomTop = () => {
 
   <div className="card-grid">
     <div className="card">
+
+
       <a href="/group-room-view">
         <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/group2.jpeg`} alt="group-room" />
         <div className="card-name">Phòng Tập Thể</div>
-        {/* <div className="card-des">Tổng cộng có 2 Phòng Tập Thế và tối đa có thể chứa 24 Người</div> */}
       </a>
+
+
+
+
+
     </div>
+    <Link to="/group-room-view">Sinh Hoạt</Link>
+
     <div className="card">
       <a href="/single-room-view">
         <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/single1.jpeg`} alt="single-room" />
         <div className="card-name">Phòng VIP</div>
-        {/* <div className="card-des">Tổng cộng có 5 Phòng Riêng</div> */}
       </a>
     </div>
   </div>

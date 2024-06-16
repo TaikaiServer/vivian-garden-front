@@ -4,7 +4,9 @@ const Activity = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+      
   }, []);
+
 
   return (
     <section className="custom">
