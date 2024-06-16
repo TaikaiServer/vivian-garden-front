@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Footer.css';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
       <h3 className='section'>Điều Khoản</h3>
       <ul>
         {/* <li><a href="#policy1">&bull; Chính sách đặt phòng</a></li> */}
-        <li><a href="/instruction">Hướng dẫn đặt phòng</a></li>
+        <li><Link to="/instruction">Hướng Dẫn Đặt Phòng</Link></li>
       </ul>
     </div>
 
