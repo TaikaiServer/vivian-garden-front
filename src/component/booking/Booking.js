@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 
 // import bookImage from '../../../public/vivian-source/book.jpg';
@@ -16,6 +16,10 @@ const BookingSection = () => {
         note: '',
         singleRooms: 1 // Default to 1 for Phòng Lẻ
     });
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     const [selectedDate, setSelectedDate] = useState(null);
     const [singleRooms, setSingleRooms] = useState(null);
