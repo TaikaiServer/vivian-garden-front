@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Nav from "../component/NavBar";
 import Footer from "../component/Footer";
 
 
 const InsView = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
         <div>
             <Nav />
