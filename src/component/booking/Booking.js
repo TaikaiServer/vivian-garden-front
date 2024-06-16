@@ -69,7 +69,7 @@ const BookingSection = () => {
     return (
         <div>
             <div className="overlay">
-            <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/book.jpg`} alt="Room" />
+            <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/book.jpeg`} alt="Room" />
                 <div className="text-overlay">Đặt Phòng</div>
             </div>
 

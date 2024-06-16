@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 const Activity = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="custom">
       <div className="overlay">
-        <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/activity.jpg`} alt="Room" />
+        <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/activity.jpeg`} alt="Room" />
         <div className="text-overlay">Sinh Hoạt</div>
       </div>
 
@@ -23,19 +28,19 @@ const Activity = () => {
        
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/dining1.jpg`} className="d-block w-100" alt="Image1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/dining1.jpeg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining2.jpg`} className="d-block w-100" alt="Image2"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining2.jpeg`} className="d-block w-100" alt="Image2"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining4.jpg`} className="d-block w-100" alt="Image3"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining4.jpeg`} className="d-block w-100" alt="Image3"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/service1.jpg`} className="d-block w-100" alt="Image4"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/service1.jpeg`} className="d-block w-100" alt="Image4"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining3.jpg`} className="d-block w-100" alt="Image5"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining3.jpeg`} className="d-block w-100" alt="Image5"/>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
@@ -65,10 +70,10 @@ const Activity = () => {
 
         <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq1.jpg`} className="d-block w-100" alt="Image1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq1.jpeg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq2.jpg`} className="d-block w-100" alt="Image2"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq2.jpeg`} className="d-block w-100" alt="Image2"/>
             </div>
             <div className="carousel-item">
               <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq3.jpeg`} className="d-block w-100" alt="Image3"/>

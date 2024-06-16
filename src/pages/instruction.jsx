@@ -9,7 +9,7 @@ const InsView = (props) => {
         <div>
             <Nav />
             <div className="overlay">
-                <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/explore.jpg`} alt="Room" />
+                <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/explore.jpeg`} alt="Room" />
                 <div className="text-overlay" style={{ fontSize: '2.2rem' }}>Hướng Dẫn Đặt Phòng</div>
             </div>
 

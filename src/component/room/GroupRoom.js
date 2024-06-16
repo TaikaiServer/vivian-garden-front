@@ -1,11 +1,16 @@
-import React from "react";
+import React , {useEffect} from "react";
 import { Link } from "react-router-dom";
 
 const GroupRoom = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return(
         <div className="single-room">
         <div className="overlay">
-           <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/group2.jpg`} alt="Room" />
+           <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/group2.jpeg`} alt="Room" />
            <div className="text-overlay">Phòng Tập Thể</div>
         </div>
 
@@ -52,28 +57,28 @@ const GroupRoom = () => {
         <div class="carousel-inner room-view">
 
             <div class="carousel-item active">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/group3.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/group3.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/group4.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/group4.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/group5.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/group5.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/group6.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/group6.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/group7.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/group7.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/group8.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/group8.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/group9.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/group9.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/room2.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/room2.jpeg`} class="d-block w-100" alt="..."/>
             </div>
 
 

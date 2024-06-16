@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 
 
 const SingleRoom = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return(
         <div className="single-room">
         <div className="overlay">
@@ -55,25 +60,25 @@ const SingleRoom = () => {
         <div class="carousel-inner room-view">
 
             <div class="carousel-item active">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/single2.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/single2.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/single3.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/single3.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/single4.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/single4.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/single5.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/single5.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/single6.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/single6.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/single7.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/single7.jpeg`} class="d-block w-100" alt="..."/>
             </div>
             <div class="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/single9.jpg`} class="d-block w-100" alt="..."/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/single9.jpeg`} class="d-block w-100" alt="..."/>
             </div>
           
 

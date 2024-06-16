@@ -1,13 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 
 
+
+
 const Contact = () =>{
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return(
         <section className="contact-info-section">
 
             <div className="overlay">
-                <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/contact.jpg`} alt="Room" />
+                <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/contact.jpeg`} alt="Room" />
                 <div className="text-overlay">Liên Hệ</div>
             </div>
 
@@ -31,7 +38,7 @@ const Contact = () =>{
 
             <div className="zalo-map-wrapper">
                 <div className="zalo-container">
-                    <img className="zalo" src={`${process.env.PUBLIC_URL}/vivian-source/zalo.png`} alt="Zalo" />
+                    <img className="zalo" src={`${process.env.PUBLIC_URL}/vivian-source/zalo.jpeg`} alt="Zalo" />
                 </div>
                 <iframe
                     title="Location"

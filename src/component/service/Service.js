@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 const Service = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <section>
       <div className="overlay">
-        <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/service1.jpg`} alt="Room" />
+        <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/service1.jpeg`} alt="Room" />
         <div className="text-overlay">Dịch Vụ</div>
       </div>
       
