@@ -6,7 +6,7 @@ import ExploreSection from "../component/home/Explore";
 import VideoSection from "../component/home/Video";
 import LocationSection from "../component/home/Location";
 import Footer from "../component/Footer";
-import EntertainmentSection from "../component/entertain/Entertainment";
+// import EntertainmentSection from "../component/entertain/Entertainment";
 // import EntertainmentSection from "../component/home/Entertainment";
 
 const HomePage = (props) =>{

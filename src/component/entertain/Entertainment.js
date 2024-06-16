@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import './EntertainmentSection.css';
 
 
@@ -15,13 +15,13 @@ const EntertainmentSection = () => {
         <div id="carouselExampleFade1" className="carousel slide carousel-fade" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/billy2.jpg`} className="d-block w-100" alt="Image 1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/billy2.jpg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/billy1.jpg`} className="d-block w-100" alt="Image 2"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/billy1.jpg`} className="d-block w-100" alt="Image2"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/billy3.jpg`} className="d-block w-100" alt="Image 3"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/billy3.jpg`} className="d-block w-100" alt="Image3"/>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
@@ -43,13 +43,13 @@ const EntertainmentSection = () => {
         <div id="carouselExampleFade2" className="carousel slide carousel-fade" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/pool2.jpg`} className="d-block w-100" alt="Image 1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/pool2.jpg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/pool1.jpg`} className="d-block w-100" alt="Image 2"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/pool1.jpg`} className="d-block w-100" alt="Image2"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/pool3.jpg`} className="d-block w-100" alt="Image 3"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/pool3.jpg`} className="d-block w-100" alt="Image3"/>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
@@ -71,16 +71,16 @@ const EntertainmentSection = () => {
         <div id="carouselExampleFade3" className="carousel slide carousel-fade" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna1.jpeg`} className="d-block w-100" alt="Image 1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna1.jpeg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna2.jpeg`} className="d-block w-100" alt="Image 2"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna2.jpeg`} className="d-block w-100" alt="Image2"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna3.jpg`} className="d-block w-100" alt="Image 3"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna3.jpg`} className="d-block w-100" alt="Image3"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna4.jpg`} className="d-block w-100" alt="Image 4"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/sauna4.jpg`} className="d-block w-100" alt="Image4"/>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">

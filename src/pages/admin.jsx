@@ -8,9 +8,9 @@ const AdminPage = () => {
     const [bookings, setBookings] = useState([]);
     const [confirmedBookings, setConfirmedBookings] = useState([]);
     const [availability, setAvailability] = useState([]);
-    const [selectedDate, setSelectedDate] = useState('');
-    const [singleRooms, setSingleRooms] = useState(5);
-    const [groupRooms, setGroupRooms] = useState(2);
+    // const [selectedDate, setSelectedDate] = useState('');
+    // const [singleRooms, setSingleRooms] = useState(5);
+    // const [groupRooms, setGroupRooms] = useState(2);
 
     const [bookingToUpdate, setBookingToUpdate] = useState(null);
     const [updatedBooking, setUpdatedBooking] = useState({
@@ -77,15 +77,15 @@ const AdminPage = () => {
             });
     };
 
-    const updateAvailabilityData = () => {
-        axios.get('https://vivian-garden-back.vercel.app/api/availability')
-            .then((response) => {
-                setAvailability(response.data || []);
-            })
-            .catch(error => {
-                console.error("There was an error fetching the availability!", error);
-            });
-    };
+    // const updateAvailabilityData = () => {
+    //     axios.get('https://vivian-garden-back.vercel.app/api/availability')
+    //         .then((response) => {
+    //             setAvailability(response.data || []);
+    //         })
+    //         .catch(error => {
+    //             console.error("There was an error fetching the availability!", error);
+    //         });
+    // };
 
     const handleUpdateBooking = (bookingId, updatedData) => {
         // Retrieve the booking data before updating

@@ -23,19 +23,19 @@ const Activity = () => {
        
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/dining1.jpg`} className="d-block w-100" alt="Image 1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/dining1.jpg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining2.jpg`} className="d-block w-100" alt="Image 1"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining2.jpg`} className="d-block w-100" alt="Image2"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining4.jpg`} className="d-block w-100" alt="Image 1"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining4.jpg`} className="d-block w-100" alt="Image3"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/service1.jpg`} className="d-block w-100" alt="Image 1"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/service1.jpg`} className="d-block w-100" alt="Image4"/>
             </div>
             <div className="carousel-item">
-            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining3.jpg`} className="d-block w-100" alt="Image 1"/>
+            <img src={`${process.env.PUBLIC_URL}/vivian-source/dining3.jpg`} className="d-block w-100" alt="Image5"/>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
@@ -65,16 +65,16 @@ const Activity = () => {
 
         <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq1.jpg`} className="d-block w-100" alt="Image 1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq1.jpg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq2.jpg`} className="d-block w-100" alt="Image 2"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq2.jpg`} className="d-block w-100" alt="Image2"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq3.jpeg`} className="d-block w-100" alt="Image 3"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq3.jpeg`} className="d-block w-100" alt="Image3"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq4.jpeg`} className="d-block w-100" alt="Image 3"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/bbq4.jpeg`} className="d-block w-100" alt="Image4"/>
             </div>
           </div>
 
@@ -104,10 +104,10 @@ const Activity = () => {
 
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/fire1.jpeg`} className="d-block w-100" alt="Image 1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/fire1.jpeg`} className="d-block w-100" alt="Image1"/>
             </div>
             <div className="carousel-item">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/fire2.jpeg`} className="d-block w-100" alt="Image 2"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/fire2.jpeg`} className="d-block w-100" alt="Image2"/>
             </div>
          
           </div>
@@ -132,7 +132,7 @@ const Activity = () => {
         <div id="carouselExampleFade3" className="carousel slide carousel-fade" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`${process.env.PUBLIC_URL}/vivian-source/team.jpeg`} className="d-block w-100" alt="Image 1"/>
+              <img src={`${process.env.PUBLIC_URL}/vivian-source/team.jpeg`} className="d-block w-100" alt="Image1"/>
             </div>
       
           </div>
