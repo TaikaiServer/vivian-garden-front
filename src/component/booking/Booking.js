@@ -35,7 +35,7 @@ const BookingSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://vivian-garden-back.vercel.app/api/book', formData);
+            await axios.post('http://localhost:3000/api/book', formData);
             alert('Booking request submitted!');
         } catch (error) {
             console.error('There was an error!', error);
@@ -45,7 +45,7 @@ const BookingSection = () => {
     const handleDateChange = (e) => {
         const date = e.target.value;
         setSelectedDate(date);
-        axios.get(`https://vivian-garden-back.vercel.app/api/availability/${date}`).then((response) => {
+        axios.get(`http://localhost:3000/api/availability/${date}`).then((response) => {
             setSingleRooms(response.data.singleRooms);
             setGroupRooms(response.data.groupRooms);
         }).catch(error => {
@@ -133,7 +133,7 @@ const BookingSection = () => {
                                 <label className="form-label">Lựa Chọn Book Phòng</label>
                                 <select name="option" className="form-control" onChange={handleChange} required>
                                     <option value="">Chọn một lựa chọn</option>
-                                    <option value="Nguyen Căn">Nguyên Căn</option>
+                                    <option value="Nguyên Căn">Nguyên Căn</option>
                                     <option value="6 Phòng">6 Phòng</option>
                                     <option value="Phòng Lẻ">Phòng Lẻ</option>
                                 </select>
