@@ -133,7 +133,7 @@ const BookingSection = () => {
                                 <label className="form-label">Lựa Chọn Book Phòng</label>
                                 <select name="option" className="form-control" onChange={handleChange} required>
                                     <option value="">Chọn một lựa chọn</option>
-                                    <option value="Nguyên Căn">Nguyên Căn</option>
+                                    <option value="Nguyen Căn">Nguyên Căn</option>
                                     <option value="6 Phòng">6 Phòng</option>
                                     <option value="Phòng Lẻ">Phòng Lẻ</option>
                                 </select>
