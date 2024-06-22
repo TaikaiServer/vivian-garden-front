@@ -18,7 +18,18 @@ const BookingSection = () => {
     });
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        const hasReloaded = localStorage.getItem('hasReloaded');
+    
+        if (!hasReloaded) {
+          localStorage.setItem('hasReloaded', 'true');
+          window.scrollTo(0, 0);
+          window.location.reload();
+        }
+    
+        // Clean up the local storage when the component unmounts
+        return () => {
+          localStorage.removeItem('hasReloaded');
+        };
       }, []);
 
     const [selectedDate, setSelectedDate] = useState(null);

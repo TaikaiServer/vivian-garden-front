@@ -143,6 +143,8 @@
   
   .carousel {
     margin-bottom: 20px; /* Add margin to create space between carousels and other elements */
+    overflow: hidden;
+
   }
   
   h2 {
@@ -199,6 +201,8 @@
     
     .carousel {
       margin-bottom: 20px; /* Add margin to create space between carousels and other elements */
+      overflow: hidden;
+
     }
     
     h2 {
