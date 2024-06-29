@@ -24,6 +24,7 @@ const Nav = () => {
               <li class="nav-item"><Link to="/activity">Sinh Hoạt</Link></li>
               <li class="nav-item"><Link to="/service">Dịch Vụ</Link></li>
               <li class="nav-item"><Link to="/contact">Liên Hệ</Link></li>
+              <li class="nav-item"><Link to="/instruction">Hướng Dẫn Đặt Phòng</Link></li>
             </ul>
 
             <div className="mt-auto">

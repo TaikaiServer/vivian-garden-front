@@ -1,8 +1,7 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // import bookImage from '../../../public/vivian-source/book.jpg';
-
 
 const BookingSection = () => {
     const [formData, setFormData] = useState({
@@ -32,9 +31,6 @@ const BookingSection = () => {
         };
       }, []);
 
-    const [selectedDate, setSelectedDate] = useState(null);
-    const [singleRooms, setSingleRooms] = useState(null);
-    const [groupRooms, setGroupRooms] = useState(null);
 
     const handleChange = (e) => {
         setFormData({
@@ -53,69 +49,22 @@ const BookingSection = () => {
         }
     };
 
-    const handleDateChange = (e) => {
-        const date = e.target.value;
-        setSelectedDate(date);
-        axios.get(`http://localhost:3000/api/availability/${date}`).then((response) => {
-            setSingleRooms(response.data.singleRooms);
-            setGroupRooms(response.data.groupRooms);
-        }).catch(error => {
-            console.error("There was an error fetching the availability for this date!", error);
-            setSingleRooms(null);
-            setGroupRooms(null);
-        });
-    };
 
-    const renderDateOptions = () => {
-        const today = new Date();
-        const options = [];
-        for (let i = 0; i < 30; i++) {
-            const date = new Date(today);
-            date.setDate(today.getDate() + i);
-            options.push(date.toISOString().split('T')[0]);
-        }
-        return options.map(date => <option key={date} value={date}>{date}</option>);
-    };
 
     return (
-        <div>
+        <section className='booking-layout'>
             <div className="overlay">
-            <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/book.jpeg`} alt="Room" />
+                <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/book.jpeg`} alt="Room" />
                 <div className="text-overlay">Đặt Phòng</div>
             </div>
 
-            <div className="container">
-                <h1>Check Room Availability</h1>
-
-                <div className="mb-3">
-                    <label className="form-label">Select Date</label>
-                    <select className="form-control" onChange={handleDateChange}>
-                        <option value="">Select a date</option>
-                        {renderDateOptions()}
-                    </select>
-                </div>
-
-                {selectedDate && (
-                    <div>
-                        <h2>Availability for {new Date(selectedDate).toLocaleDateString()}</h2>
-                        {singleRooms !== null && groupRooms !== null ? (
-                            <div>
-                                <p>Single Rooms Available: {singleRooms}</p>
-                                <p>Group Rooms Available: {groupRooms}</p>
-                            </div>
-                        ) : (
-                            <p>Loading availability...</p>
-                        )}
-                    </div>
-                )}
-            </div>
-
             <div className="container d-flex justify-content-center align-items-center vh-100">
-                <div className="card" style={{ width: '30rem' }}>
+                <div className="card booking-card">
                     <div className="card-body">
                         <h5 className="card-title">Gửi Yêu Cầu Đặt Phòng</h5>
+                        <p className="text-warning">Lưu ý: Đây là mục để quý khách gửi yêu cầu đặt phòng. Sau khi nhận được yêu cầu, chúng tôi sẽ liên hệ lại với quý khách trong vòng 1 ngày để xác nhận và chốt phòng. Xin cảm ơn!</p>
 
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} className="booking-form">
                             <div className="mb-3">
                                 <label className="form-label">Họ Và Tên</label>
                                 <input type="text" name="name" className="form-control" onChange={handleChange} required />
@@ -164,7 +113,7 @@ const BookingSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
