@@ -42,7 +42,7 @@ const BookingSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:3000/api/book', formData);
+            await axios.post('https://vivian-garden-back.vercel.app/api/book', formData);
             alert('Booking request submitted!');
         } catch (error) {
             console.error('There was an error!', error);
