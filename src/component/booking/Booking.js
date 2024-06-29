@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 // import bookImage from '../../../public/vivian-source/book.jpg';
 
@@ -15,6 +17,9 @@ const BookingSection = () => {
         note: '',
         singleRooms: 1 // Default to 1 for Phòng Lẻ
     });
+
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         const hasReloaded = localStorage.getItem('hasReloaded');
@@ -43,7 +48,9 @@ const BookingSection = () => {
         e.preventDefault();
         try {
             await axios.post('https://vivian-garden-back.vercel.app/api/book', formData);
-            alert('Booking request submitted!');
+            navigate('/confirmation');
+
+            // alert('Booking request submitted!');
         } catch (error) {
             console.error('There was an error!', error);
         }

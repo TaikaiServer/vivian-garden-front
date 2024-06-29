@@ -257,9 +257,78 @@
 
   
   
+/* CONFIRMATION */
+
+
+.return-btn{
+  text-decoration: none;
+  border-radius: 5%;
+  padding: 3%;
+  color: white;
+  background-color: #f8af43;
+}
+
+
+
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #f9f9f9;
+}
+
+.confirmation-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tick-mark {
+  font-size: 4rem;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #f9f9f9;
+}
+
+.confirmation-content {
+  width: 60%; /* Adjust the width as needed */
+  max-width: 500px;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.5; /* Add line height for padding between lines */
+}
+
+.tick-mark {
+  font-size: 4rem;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.confirmation-content p {
+  padding: 3%;
+}
+
 
   
-
+}
 
 
 

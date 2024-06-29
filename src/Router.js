@@ -13,6 +13,7 @@ import EntertainView from './pages/entertainment';
 import InsView from './pages/instruction';
 import BookingView from './pages/booking';
 import AdminPage from './pages/admin';
+import ConfirmView from './pages/confirm';
 
 const AppRouter = () => {
   return (
@@ -31,6 +32,9 @@ const AppRouter = () => {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/single-room-view" element={<SingleRoomView />} />
         <Route path="/group-room-view" element={<GroupRoomView />} />
+
+        <Route path="/confirmation" element={<ConfirmView />} />
+
       </Routes>
     </Router>
   );
