@@ -33,7 +33,7 @@ const ConfirmView = (props) => {
                 <div className="confirmation-content">
                     <div className="tick-mark">✓</div>
                     <h2>Chúng tôi đã nhận được yêu cầu đặt phòng!</h2>
-                    <p>Chúng tôi sẽ liên hệ với quý khách sớm nhất có thể trong vòng 1 ngày để trao đổi thêm trước khi chốt phòng cho khách.</p>
+                    <p>Chúng tôi sẽ liên hệ với quý khách sớm nhất có thể trong vòng 1 ngày để trao đổi thêm trước khi chốt phòng cho quý khách.</p>
                     <p>Cảm ơn quý khách đã chọn Vivian's Garden.</p>
                     <Link to="/" className="return-btn">Quay Lại Trang Chủ</Link>
                 </div>

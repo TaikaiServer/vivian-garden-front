@@ -8,8 +8,7 @@ const GreetingSection = () => {
       <div className="intro-box">
         {/* <img className="intro-img" src={`${process.env.PUBLIC_URL}/vivian-source/gate.jpg`} alt="Greeting Image" /> */}
         <p className="intro-msg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum id erat fermentum blandit. Donec sed felis et lorem tempus semper vestibulum et eros. Fusce blandit elementum purus ac pharetra. Donec ac enim metus. Aenean eu augue maximus, euismod justo in, pellentesque velit. Duis at mauris vel magna ultricies tincidunt. Aliquam viverra est dui, nec pulvinar magna dignissim quis. Vestibulum condimentum, enim vel dictum efficitur, nisi tellus
-        </p>
+        View Thung lũng có tổng diện tích 2.500 m2 toạ lạc tại thôn Trán Voi, xã Phú Mãn, huyện Quốc Oai, Hà Nội. Cách trung tâm Hà Nội 40km. Đi từ BigC Thăng Long đến nơi đúng 33 phút.        </p>
         <img className="intro-img" src={`${process.env.PUBLIC_URL}/vivian-source/gate.jpeg`} alt="Greeting" />
 
       </div>
