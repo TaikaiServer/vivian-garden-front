@@ -1,12 +1,18 @@
 body, html {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   font-family: "Tiny5", sans-serif;
-  overflow: auto; /* Ensure that the body is scrollable */
+  overflow-x: hidden;
 
 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
