@@ -22,7 +22,7 @@ const RoomTop = () => {
     return (
 <section>
   <div className="overlay">
-    <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/room2.jpeg`} alt="Room" loading="lazy" />
+    <img className="room-image" src={`${process.env.PUBLIC_URL}/vivian-source/room2.jpeg`} alt="Room" />
     <div className="text-overlay">Phòng</div>
   </div>
 
@@ -36,7 +36,7 @@ const RoomTop = () => {
       </a> */}
 
       <Link to="/group-room-view"> 
-        <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/group2.jpeg`} alt="group-room" loading="lazy" />
+        <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/group2.jpeg`} alt="group-room" />
         <div className="card-name">Phòng Tập Thể</div>
       </Link>
 
@@ -53,7 +53,7 @@ const RoomTop = () => {
       </a> */}
 
       <Link to="/single-room-view"> 
-        <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/single1.jpeg`} alt="single-room" loading="lazy"/>
+        <img className="card-image" src={`${process.env.PUBLIC_URL}/vivian-source/single1.jpeg`} alt="group-room" />
         <div className="card-name">Phòng VIP</div>
       </Link>
     </div>
